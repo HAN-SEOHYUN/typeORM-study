@@ -1,6 +1,7 @@
 import { AppDataSource } from "./data-source";
 import express, { Application } from "express";
 import userRouter from './routes/userRoutes'
+import addressRouter from './routes/addressRoutes';
 
 
 AppDataSource.initialize().then(async () => {
@@ -12,6 +13,7 @@ AppDataSource.initialize().then(async () => {
 
     //routes
     app.use('/api/user',userRouter);
+    app.use('/api/address', addressRouter);
 
     // run app
     app.listen(3000);

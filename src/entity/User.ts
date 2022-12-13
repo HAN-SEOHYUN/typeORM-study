@@ -1,4 +1,5 @@
 import {Entity, PrimaryGeneratedColumn, Column, OneToOne} from 'typeorm'
+import { Address }  from './Address'
 
 @Entity()
 export class User {
@@ -11,6 +12,6 @@ export class User {
     @Column()
     age :number;
 
-    // @OneToOne(()=>Address, (address) -> address.user)
-    // address : Address
+    @OneToOne(()=>Address, (address) => address.user) // 양방향매핑
+    address : Address
 }

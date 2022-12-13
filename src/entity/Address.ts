@@ -9,8 +9,9 @@ export class Address {
   @Column()
   detailAddress: string
 
-  @OneToOne(()=> User)
+  @OneToOne(()=> User, (user)=> user.address,{
+    cascade : true,
+  })
   @JoinColumn()
   user : User
-
 }
