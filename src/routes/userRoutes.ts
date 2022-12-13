@@ -7,5 +7,6 @@ const router = express.Router();
 router.post("/", userController.saveUser);
 router.get("/:id", userController.getUserById);
 router.get("/", userController.getJoinedUser);
+router.put("/:id", userController.updateUser);
 
 export default router;
