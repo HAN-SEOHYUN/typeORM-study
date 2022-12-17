@@ -1,5 +1,7 @@
 # typeORM-study
+<h2>typescript-typeORM-api</h2>
 <h3>목표</h3>
+<li>typescript 학습</li>
 <li>typeORM 학습</li>
 <br>
 <h3>Dependency</h3>
@@ -48,9 +50,12 @@
       addresses: Address[]
     }
     
-
-
-
+<br>
+<li>연관관계 설정</li>
+<li>POSTMAN을 통한 API 테스트</li>
+<li>QueryBuilder 이용하기</li>
+<h4>및 상세 학습내용은 아래 블로그에 글로 정리했습니다.</h4>
+<h2>https://feelfreetothink.tistory.com/169</h2>
 
 
 
